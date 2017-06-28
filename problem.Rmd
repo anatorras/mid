@@ -1,0 +1,74 @@
+---
+title: 'Midterm report'
+author: | 
+  | Kenji Sato
+  | Kobe University
+  | Email: mail@kenjisato.jp
+date: |
+  | 29 June, 2017
+  | Due on 14 July, 2017
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    includes:
+      in_header: asset/latex/custom.sty
+    keep_tex: no
+    latex_engine: pdflatex
+    number_sections: yes
+    template: null
+    toc: no
+  bookdown::html_document2: default
+documentclass: scrartcl
+---
+
+# Instructions
+
+- Click on invitation link for `mid` at [kjst.jp/ma17q2hw](kjst.jp/ma17q2hw)
+- Clone your assignment repository and make a working branch (eg. `solution` branch);
+- Solve the problems in Section \@ref(problems); 
+- Write the solutions in `solution.Rmd`; 
+- Commit `solution.pdf` and all files necessary to create the pdf; and 
+- Open a Pull Request by the deadline.
+
+
+Updates and/or hints may be announced on Slack. Watch the channel for the class.
+
+\pagebreak
+
+# Problems
+
+Write your solutions in `solution.Rmd`.
+
+## Solow Model
+
+Consider the text-book Solow model. Suppose that the economy is in its steady state. 
+What happens in response to the following changes of parameter?
+
+* Decrease in saving rate $s$
+* Increase in population growth rate $n$
+* Decrease in technical growth rate $g$
+
+## MRW: text-book Solow model
+
+Conduct the two regression analyses discussed in the slides for Day 5:
+
+* non-restricted, bivariate OLS
+* restricted, simple OLS
+
+Use PWT v9.0 dataset restricted to the subset containing
+the countries the populations of which in 1960 are more than 1 million,
+
+Report on what you observe.
+
+## MRW: augmented Solow model
+
+Conduct the regression analysis discussed in the slides for Day 6:
+
+* trivariate OLS using Equation (12)
+
+Use PWT v9.0 dataset restricted to the subset chosen above. 
+I suggest the average of `hc` over 2010-2014 as a proxy for $h^*$ but 
+you can try other options.
+
+Report on what you observe.
+
